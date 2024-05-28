@@ -6,11 +6,11 @@ This repository contains code practicing JavaScript ES6 Promises. Promises are a
 
 1. Clone this repository:
 
-```git clone [https://github.com/](https://github.com/)<your-username>/<repo-name>.git
+```git clone [https://github.com/](https://github.com/)<your-username>/<repo-name>.git```
 
 2. Install any dependencies (if needed) using yarn or npm
 
-```npm install
+```npm install```
 
 ### Code Examples
 
