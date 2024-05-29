@@ -1,10 +1,10 @@
 export default function divideFunction(numerator, denominator) {
   try {
     if (denominator === 0) {
-      throw new Error('cannot divide by 0');
+      throw new Error();
     }
     return numerator / denominator;
   } catch (err) {
-    console.log(`${err.message}`);
+    throw Error('cannot divide by 0');
   }
 }
