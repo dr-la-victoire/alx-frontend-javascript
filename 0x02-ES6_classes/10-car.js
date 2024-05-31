@@ -15,8 +15,8 @@ export default class Car {
 
   // Methods
   cloneCar() {
-    const Constructor = this.constructor[Symbol.species];
-    return new Constructor(this._brand, this._motor, this._color);
+    // Returning a new object of the class
+    return new this.constructor(this._brand, this._motor, this._color);
   }
 
   // Static getter for Symbol species
