@@ -10,6 +10,12 @@ export default class SkyHighBuilding extends Building {
     }
   }
 
+  // Getter
+  get floors() {
+    return this._floors;
+  }
+
+  // Overiding the method check
   evacuationWarningMessage() {
     const str = `Evaluate slowly the ${this._floors} floors`;
     return str;
