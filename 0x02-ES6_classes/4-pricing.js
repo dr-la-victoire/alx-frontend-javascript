@@ -2,6 +2,7 @@ import Currency from './3-currency';
 
 export default class Pricing {
   constructor(amount, currency) {
+    // Type validation for class attributes
     if (typeof amount !== 'number') {
       throw new TypeError('Amount must be a number');
     } else if (!(currency instanceof Currency)) {
@@ -41,7 +42,7 @@ export default class Pricing {
     const firstAttr = this._amount;
     const secondAttr = this._currency.displayFullCurrency();
 
-    return `${firstAttr} (${secondAttr})`;
+    return `${firstAttr} ${secondAttr}`;
   }
 
   static convertPrice(amount, conversionRate) {
