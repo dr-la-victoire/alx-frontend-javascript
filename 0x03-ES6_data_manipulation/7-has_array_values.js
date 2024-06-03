@@ -9,7 +9,7 @@ export default function hasValuesFromArray(set, array) {
 
   if (num === arrayLength) {
     return true;
-  } else {
-    return false;
   }
+
+  return false;
 }
