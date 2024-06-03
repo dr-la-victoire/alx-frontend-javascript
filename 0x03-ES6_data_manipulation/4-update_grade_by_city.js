@@ -5,14 +5,14 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
   const secondArr = firstArr.map((student) => {
     // finding out if the student.id & newGrade.id match
     const gradeObject = newGrades.find(
-      (grade) => grade.studentId === student.id
+      (grade) => grade.studentId === student.id,
     );
     let updatedGrade;
 
     if (gradeObject) {
       updatedGrade = gradeObject.grade;
     } else {
-      updatedGrade = "N/A";
+      updatedGrade = 'N/A';
     }
 
     return {
