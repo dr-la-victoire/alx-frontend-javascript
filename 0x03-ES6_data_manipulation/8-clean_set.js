@@ -5,17 +5,17 @@ export default function cleanSet(set, startString) {
 
   if (startString === '') {
     return '';
-  } else {
-    for (let element of set) {
-      if (element.startsWith(startString)) {
-        if (firstElement) {
-          remainingPart = element.slice(startString.length);
-          str += remainingPart;
-          firstElement = false;
-        } else {
-          remainingPart = element.slice(startString.length);
-          str += `-${remainingPart}`;
-        }
+  }
+
+  for (const element of set) {
+    if (element.startsWith(startString)) {
+      if (firstElement) {
+        remainingPart = element.slice(startString.length);
+        str += remainingPart;
+        firstElement = false;
+      } else {
+        remainingPart = element.slice(startString.length);
+        str += `-${remainingPart}`;
       }
     }
   }
