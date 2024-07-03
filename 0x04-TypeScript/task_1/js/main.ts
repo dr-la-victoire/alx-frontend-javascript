@@ -36,4 +36,25 @@ const printTeacher: printTeacherFunction = (firstName, lastName) => {
   const first = firstName.charAt(0);
 
   return `${first}. ${lastName}`;
+  }
+
+// Writing the Student class
+class StudentClass {
+  firstName: string;
+  lastName: string;
+
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    }
+
+    workOnHomework(): string {
+      return "Currently working";
+      }
+
+    displayName(): string {
+      return this.firstName;
+    }
+
+
 }
